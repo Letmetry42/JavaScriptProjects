@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 * {
     box-sizing: border-box;
@@ -9,19 +10,35 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60%;
-    padding: 15px;
+    max-height: 100vh;
+    margin: 0px;
+    background-color: gray;
+}
 
+h1 {
+    color: white;
+}
+
+.screen {
+    cursor: pointer;
+    width: 60%;
+    background-color: black !important;
 }
 
 .controls {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0,0,0,0.6);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 60%;
     padding: 15px;
+}
+
+.btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
 }
 
 .btn:focus {
@@ -38,12 +55,17 @@ body {
 
 .fa-pause {
     color: white;
-
 }
+
+span.timestamp {
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
 
 @media(max-width: 800px) {
     .screen, .controls {
-        width:90%;
+        width: 90%;
     }
 }
-
