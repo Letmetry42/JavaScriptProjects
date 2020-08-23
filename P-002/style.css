@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: slategrey;
+    background-color: slategray;
     display: flex;
     flex-direction: column;
     color: white;
@@ -21,7 +21,7 @@ body {
 }
 
 .movie-container select {
-    background-color: white ;
+    background-color: white;
     border: 0;
     border-radius: 5px;
     font-size: 14px;
@@ -30,16 +30,15 @@ body {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-
 }
 
 .seat {
-    background-color:darkgray;
+    background-color: darkgray;
     height: 12px;
     width: 15px;
     margin: 3px;
     border-top-left-radius: 10px;
-    border-top-right-radius:10px;
+    border-top-right-radius: 10px;
 }
 
 .seat.selected {
@@ -60,13 +59,12 @@ body {
 
 .seat:not(.occupied):hover {
     cursor: pointer;
-    transform: scale(1.5);
-   
+    transform: scale(1.2);
 }
 
 .legend {
     background-color: rgba(0, 0, 0, 0.1);
-    padding: 2px;
+    padding: 5px 10px;
     border-radius: 5px;
     color: lightgray;
     list-style-type: none;
@@ -82,24 +80,21 @@ body {
 }
 
 .legend li small {
-    margin-left: 3px;
-    
+    margin-left: 2px;
 }
- 
+
 .legend .seat:not(.occupied):hover {
     cursor: default;
     transform: scale(1);
-
 }
 
 .container {
-    perspective: 1000px;
+    perspective: 900px;
     margin-bottom: 30px;
 }
 
 .row {
     display: flex;
-
 }
 
 .screen {
@@ -108,15 +103,13 @@ body {
     width: 100%;
     margin: 15px 0;
     transform: rotateX(-45deg);
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7); 
-
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
 }
 
-.p.text {
+p.text {
     margin: 5px 0;
 }
 
-.p.text span {
+p.text span {
     color: aqua;
 }
