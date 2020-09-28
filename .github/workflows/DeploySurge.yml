@@ -29,11 +29,11 @@ jobs:
            node-version: '12'
 
       # Step to install and run surge
-      - name: setup Surge
+      - name: install Surge
         run: npm install --global surge
         
-      # Step to Deploy surge
-      - name: Execute Deployment with Surge
-        run: Surge ./ project001_NasirSherAli.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      # Deploy App to surge
+      - name: Deploying project to Surge
+        run: Surge ./ NasirSherAli.surge.sh --token ${{ secrets.SURGE_TOKEN }}
       
       
