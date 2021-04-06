@@ -7,13 +7,14 @@ const password2 = document.getElementById('password2');
 
 // All functions
 // Function to show error
-function showError(input, message) {}
+function showError(input, message) { }
 
 // This is an event listner for the form on submit
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function (e) {
     e.preventDefault();
 
     if (username.nodeValue === '') {
 
     }
 })
+
